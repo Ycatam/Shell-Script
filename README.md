@@ -1,1 +1,1 @@
-Hi. In this repository I'll focus on exercises and my learnings about Linux Shell Script. I'm using the ATOM text editor with the bash as the main compiler.
+Hi. In this repository I'll focus on exercises and my learnings about Linux Shell Script. I'm using the ATOM text editor with the bash as the main compiler. I'm using Kali Linux destro. I know the main goal of this destro is to test networks security, but I believe that I can learn about linux using this destro intead of Ubunto or Fedora.
