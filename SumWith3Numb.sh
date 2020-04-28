@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 echo "$0"
 
 echo "Type the first number: "
