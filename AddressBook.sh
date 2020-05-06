@@ -19,8 +19,8 @@
 #   1.0 - First run of the script
 # ------------------------------------------------------------------------ #
 # Tested in:
-# 
-# Tested in bash version 
+#
+# Tested in bash version 5.0.11(1)
 # ------------------------------------------------------------------------ #
 # Special Thanks:
 #
@@ -29,6 +29,8 @@
 
 # ------------------------------- GLOBAL VARIABLES ----------------------- #
 
+BOOK=~/.addressbook
+export BOOK
 
 # ------------------------------- TESTS ---------------------------------- #
 
@@ -116,7 +118,7 @@ locate_single_item()
   while [ "${n}" -ne "1" ]; do
     #list_items "$search"
     echo -en "${n} matches found. Please choose a "
-    case "$n" in 
+    case "$n" in
       "0") echo "less" ;;
       "*") echo "more" ;;
     esac
@@ -189,7 +191,7 @@ edit_item()
 show_menu()
 {
   # Called by do_menu
-  
+
   echo
   echo
   echo
@@ -211,7 +213,7 @@ do_menu()
     show_menu
     read i
     i=`echo $i | tr '[A-Z]' '[a-z]'`
-    case "$i" in 
+    case "$i" in
 	"1")
 	list_items
 	;;
@@ -225,7 +227,7 @@ do_menu()
 	remove_item
 	;;
 	"q")
-	# Ought to confirm before quitting!
+	# Confirm before quitting!
 	echo "Good Bye!"
 	exit 0
 	;;
